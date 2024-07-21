@@ -1,0 +1,5 @@
+                   0 Clock : a=0,b=0,cin=0,sum=0,carry=0
+                   1 Clock : a=1,b=0,cin=0,sum=1,carry=0
+                   2 Clock : a=1,b=1,cin=0,sum=0,carry=1
+                   3 Clock : a=0,b=1,cin=1,sum=0,carry=1
+                   4 Clock : a=1,b=1,cin=1,sum=1,carry=1
