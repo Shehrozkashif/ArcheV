@@ -2,8 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import webview
 import os
 import sys
-from llama_cpp import Llama, LlamaGrammar
-from models import MODELS
+
 sys.path.append('/home/shehroz/ArcheV/backend/Syntacticle_analysis/verilog(1)/verilog')
 from linter import run_verilator_lint
 
