@@ -1,4 +1,0 @@
-5c5
-<                    4 Clock : a=1,b=1,cin=1,sum=1,carry=11
----
->                    4 Clock : a=1,b=1,cin=1,sum=1,carry=1
