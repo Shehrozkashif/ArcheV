@@ -1,9 +1,9 @@
-from llama_cpp import Llama
+from globals import LLM
 
 
-def llm_response(llm_obj, sys_prompt, user_prompt):
+def llm_response(sys_prompt, user_prompt):
     while True:
-        response = llm_obj.create_chat_completion(
+        response = LLM.create_chat_completion(
             messages=[{'role': 'system', 'content': sys_prompt},
                       {'role': 'user', 'content': user_prompt}],
             max_tokens=None
