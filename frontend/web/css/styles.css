@@ -1,5 +1,3 @@
-/* folder selection button css ccode */
-
 .get-started-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -13,13 +11,16 @@
     text-align: center;
 }
 
+
 .get-started-btn:hover {
     background-color: #0056b3;
 }
 
+
 .input-container {
     margin-bottom: 15px;
 }
+
 
 .input-container input[type="text"] {
     width: calc(100% - 120px);
@@ -29,6 +30,7 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 
 .input-container button {
     display: inline-block;
@@ -42,7 +44,6 @@
     cursor: pointer;
     text-align: center;
 }
-
 .input-container button:hover {
-    background-color: #2196F3!;
+    background-color: #1976d2;
 }
