@@ -4,6 +4,8 @@ import sys
 from llama_cpp import Llama
 from llm_interface import llm_interface
 from syntactical_analysis import linter
+from functional_verification import funct
+
 
 # Add the directory containing main.py to the Python path
 sys.path.append('/home/shehroz/ArcheV')
@@ -44,7 +46,7 @@ def read_prompts_from_directory(directory_path):
     return prompts
 
 
-directory_path = 'path/to/your/prompts_directory'
+directory_path = '/home/shehroz/ArcheV/prompts'
 user_prompts = read_prompts_from_directory(directory_path)
 
 sys_prompt = "Write a Verilog module for the following module description."
@@ -59,3 +61,44 @@ print(verilog_code)
 
 # Passing the Verilog code to linter.py
 syntax_results = linter.run_verilator_lint(verilog_code)  # linter will provide the result pass or fail
+
+
+# functional verification
+
+# a verilog file and  the llm output will be compared if they were same the llm will passed the functional verification test 
+
+def read_verilog_file(file_path):
+    """
+    Reads the contents of a Verilog file and returns it as a string.
+
+    Args:
+        file_path (str): The path to the Verilog file.
+
+    Returns:
+        str: The content of the Verilog file.
+    """
+    try:
+        with open(file_path, 'r') as file:
+            verilog_code = file.read()
+        return verilog_code
+    except FileNotFoundError:
+        print(f"Error: The file at {file_path} was not found.")
+        return None
+    except IOError:
+        print(f"Error: An IOError occurred while reading the file at {file_path}.")
+        return None
+
+
+verilog_file_path = '/home/shehroz/ArcheV/functional_verification/compare.v'  
+output_file = read_verilog_file(verilog_file_path)
+
+
+
+
+def functional_verification(syntax_results):
+    if syntax_results == "pass":
+        results_functional_verification =funct.run_verilog_simulation(syntax_results, output_file)
+        
+    
+    return results_functional_verification
+
