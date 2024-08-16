@@ -1,0 +1,110 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "enable_instr_forward": 1,
+          "enable_pc_forward": 0,
+          "is_br": 0,
+          "is_jal": 0,
+          "is_jalr": 0,
+          "pc_stall": 0,
+          "next_pc_stall": 0,
+          "pc_jalr": 0,
+          "instr_stall": 0,
+          "pc_fd": 0,
+          "imm": 4
+        },
+        "expected_output": {
+          "pc_out": 0,
+          "pc_plus_4": 0,
+          "next_pc_out": 0,
+          "instr_addr": 0
+        }
+      },
+      {
+        "input": {
+          "enable_instr_forward": 1,
+          "enable_pc_forward": 1,
+          "is_br": 1,
+          "is_jal": 0,
+          "is_jalr": 0,
+          "pc_stall": 0,
+          "next_pc_stall": 0,
+          "pc_jalr": 0,
+          "instr_stall": 0,
+          "pc_fd": 0,
+          "imm": 8
+        },
+        "expected_output": {
+          "pc_out": 0,
+          "pc_plus_4": 0,
+          "next_pc_out": 0,
+          "instr_addr": 0
+        }
+      },
+      {
+        "input": {
+          "enable_instr_forward": 0,
+          "enable_pc_forward": 1,
+          "is_br": 0,
+          "is_jal": 0,
+          "is_jalr": 0,
+          "pc_stall": 0,
+          "next_pc_stall": 0,
+          "pc_jalr": 0,
+          "instr_stall": 0,
+          "pc_fd": 0,
+          "imm": 0
+        },
+        "expected_output": {
+          "pc_out": 0,
+          "pc_plus_4": 0,
+          "next_pc_out": 0,
+          "instr_addr": 0
+        }
+      },
+      {
+        "input": {
+          "enable_instr_forward": 1,
+          "enable_pc_forward": 0,
+          "is_br": 0,
+          "is_jal": 1,
+          "is_jalr": 0,
+          "pc_stall": 0,
+          "next_pc_stall": 0,
+          "pc_jalr": 0,
+          "instr_stall": 0,
+          "pc_fd": 0,
+          "imm": 12
+        },
+        "expected_output": {
+          "pc_out": 0,
+          "pc_plus_4": 0,
+          "next_pc_out": 0,
+          "instr_addr": 0
+        }
+      },
+      {
+        "input": {
+          "enable_instr_forward": 1,
+          "enable_pc_forward": 1,
+          "is_br": 0,
+          "is_jal": 0,
+          "is_jalr": 1,
+          "pc_stall": 0,
+          "next_pc_stall": 0,
+          "pc_jalr": 0,
+          "instr_stall": 0,
+          "pc_fd": 0,
+          "imm": 0
+        },
+        "expected_output": {
+          "pc_out": 0,
+          "pc_plus_4": 0,
+          "next_pc_out": 0,
+          "instr_addr": 0
+        }
+      }
+    ]
+  }
+  

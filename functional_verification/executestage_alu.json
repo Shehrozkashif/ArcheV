@@ -1,0 +1,155 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 10,
+          "src2_data": 5,
+          "imm": 3,
+          "sel_imm": 0,
+          "add_en": 1,
+          "sll_en": 0,
+          "slt_en": 0,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 0,
+          "jal_en": 0,
+          "auipc_en": 0,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 15
+        }
+      },
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 10,
+          "src2_data": 5,
+          "imm": 3,
+          "sel_imm": 1,
+          "add_en": 0,
+          "sll_en": 0,
+          "slt_en": 0,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 0,
+          "jal_en": 0,
+          "auipc_en": 0,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 13
+        }
+      },
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 10,
+          "src2_data": 5,
+          "imm": 0,
+          "sel_imm": 0,
+          "add_en": 0,
+          "sll_en": 1,
+          "slt_en": 0,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 0,
+          "jal_en": 0,
+          "auipc_en": 0,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 320
+        }
+      },
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 10,
+          "src2_data": 5,
+          "imm": 0,
+          "sel_imm": 0,
+          "add_en": 0,
+          "sll_en": 0,
+          "slt_en": 1,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 0,
+          "jal_en": 0,
+          "auipc_en": 0,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 0
+        }
+      },
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 0,
+          "src2_data": 0,
+          "imm": 0,
+          "sel_imm": 0,
+          "add_en": 0,
+          "sll_en": 0,
+          "slt_en": 0,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 1,
+          "jal_en": 0,
+          "auipc_en": 0,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 0
+        }
+      },
+      {
+        "input": {
+          "pc": 0,
+          "src1_data": 0,
+          "src2_data": 0,
+          "imm": 4,
+          "sel_imm": 0,
+          "add_en": 0,
+          "sll_en": 0,
+          "slt_en": 0,
+          "xor_en": 0,
+          "srl_en": 0,
+          "sra_en": 0,
+          "or_en": 0,
+          "and_en": 0,
+          "sub_en": 0,
+          "jalr_en": 0,
+          "jal_en": 0,
+          "auipc_en": 1,
+          "lui_en": 0
+        },
+        "expected_output": {
+          "result": 0
+        }
+      }
+    ]
+  }
+  

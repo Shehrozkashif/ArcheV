@@ -1,0 +1,57 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "instr_addr_in": 100,
+          "stall_jump": 0,
+          "enable_stall": 0,
+          "mem_instr": 12345678,
+          "stall_instr": 87654321
+        },
+        "expected_output": {
+          "instr_addr_out": 100,
+          "instr_out": 12345678
+        }
+      },
+      {
+        "input": {
+          "instr_addr_in": 200,
+          "stall_jump": 1,
+          "enable_stall": 0,
+          "mem_instr": 12345678,
+          "stall_instr": 87654321
+        },
+        "expected_output": {
+          "instr_addr_out": 200,
+          "instr_out": 87654321
+        }
+      },
+      {
+        "input": {
+          "instr_addr_in": 300,
+          "stall_jump": 0,
+          "enable_stall": 1,
+          "mem_instr": 12345678,
+          "stall_instr": 87654321
+        },
+        "expected_output": {
+          "instr_addr_out": 300,
+          "instr_out": 87654321
+        }
+      },
+      {
+        "input": {
+          "instr_addr_in": 400,
+          "stall_jump": 1,
+          "enable_stall": 1,
+          "mem_instr": 12345678,
+          "stall_instr": 87654321
+        },
+        "expected_output": {
+          "instr_addr_out": 400,
+          "instr_out": 87654321
+        }
+      }
+    ]
+  }
+  

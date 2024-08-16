@@ -1,0 +1,45 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "alu_result": 12345678,
+          "mem_data": 87654321,
+          "load_data_sel": 0
+        },
+        "expected_output": {
+          "wb_data": 12345678
+        }
+      },
+      {
+        "input": {
+          "alu_result": 12345678,
+          "mem_data": 87654321,
+          "load_data_sel": 1
+        },
+        "expected_output": {
+          "wb_data": 87654321
+        }
+      },
+      {
+        "input": {
+          "alu_result": -12345678,
+          "mem_data": -87654321,
+          "load_data_sel": 0
+        },
+        "expected_output": {
+          "wb_data": -12345678
+        }
+      },
+      {
+        "input": {
+          "alu_result": -12345678,
+          "mem_data": -87654321,
+          "load_data_sel": 1
+        },
+        "expected_output": {
+          "wb_data": -87654321
+        }
+      }
+    ]
+  }
+  

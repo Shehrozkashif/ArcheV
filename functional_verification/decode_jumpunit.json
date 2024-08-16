@@ -1,0 +1,130 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "src1_data": 0,
+          "src2_data": 0,
+          "alu_result": 0,
+          "regam_alu_out": 0,
+          "wb_dest_data": 0,
+          "mem_data_out": 0,
+          "func3": 0,
+          "branch_id": 0,
+          "i_jalr_id": 0,
+          "opcode": 103,
+          "forward_jump_op1": 0,
+          "forward_jump_op2": 0,
+          "imm_instr": 0
+        },
+        "expected_output": {
+          "jalr_pc": 0,
+          "branch_enable": 0,
+          "b_enable": 0,
+          "jal_enable": 0,
+          "jalr_enable": 1,
+          "jalr_pc_enable": 1
+        }
+      },
+      {
+        "input": {
+          "src1_data": 10,
+          "src2_data": 20,
+          "alu_result": 0,
+          "regam_alu_out": 30,
+          "wb_dest_data": 40,
+          "mem_data_out": 50,
+          "func3": 0,
+          "branch_id": 0,
+          "i_jalr_id": 0,
+          "opcode": 103,
+          "forward_jump_op1": 1,
+          "forward_jump_op2": 0,
+          "imm_instr": 5
+        },
+        "expected_output": {
+          "jalr_pc": 35,
+          "branch_enable": 0,
+          "b_enable": 0,
+          "jal_enable": 0,
+          "jalr_enable": 1,
+          "jalr_pc_enable": 1
+        }
+      },
+      {
+        "input": {
+          "src1_data": 10,
+          "src2_data": 10,
+          "alu_result": 0,
+          "regam_alu_out": 0,
+          "wb_dest_data": 0,
+          "mem_data_out": 0,
+          "func3": 0,
+          "branch_id": 0,
+          "i_jalr_id": 0,
+          "opcode": 99,
+          "forward_jump_op1": 0,
+          "forward_jump_op2": 0,
+          "imm_instr": 0
+        },
+        "expected_output": {
+          "jalr_pc": 0,
+          "branch_enable": 1,
+          "b_enable": 1,
+          "jal_enable": 0,
+          "jalr_enable": 0,
+          "jalr_pc_enable": 0
+        }
+      },
+      {
+        "input": {
+          "src1_data": 10,
+          "src2_data": 20,
+          "alu_result": 0,
+          "regam_alu_out": 0,
+          "wb_dest_data": 0,
+          "mem_data_out": 0,
+          "func3": 1,
+          "branch_id": 0,
+          "i_jalr_id": 0,
+          "opcode": 99,
+          "forward_jump_op1": 0,
+          "forward_jump_op2": 0,
+          "imm_instr": 0
+        },
+        "expected_output": {
+          "jalr_pc": 0,
+          "branch_enable": 1,
+          "b_enable": 1,
+          "jal_enable": 0,
+          "jalr_enable": 0,
+          "jalr_pc_enable": 0
+        }
+      },
+      {
+        "input": {
+          "src1_data": -10,
+          "src2_data": 10,
+          "alu_result": 0,
+          "regam_alu_out": 0,
+          "wb_dest_data": 0,
+          "mem_data_out": 0,
+          "func3": 4,
+          "branch_id": 0,
+          "i_jalr_id": 0,
+          "opcode": 99,
+          "forward_jump_op1": 0,
+          "forward_jump_op2": 0,
+          "imm_instr": 0
+        },
+        "expected_output": {
+          "jalr_pc": 0,
+          "branch_enable": 1,
+          "b_enable": 1,
+          "jal_enable": 0,
+          "jalr_enable": 0,
+          "jalr_pc_enable": 0
+        }
+      }
+    ]
+  }
+  
