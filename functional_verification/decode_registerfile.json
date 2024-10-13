@@ -1,0 +1,70 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "dest_addr": 1,
+          "dest_data": 10,
+          "src1_addr": 1,
+          "src2_addr": 2,
+          "write_enable": 1
+        },
+        "expected_output": {
+          "src1_data": 10,
+          "src2_data": 0
+        }
+      },
+      {
+        "input": {
+          "dest_addr": 2,
+          "dest_data": 20,
+          "src1_addr": 1,
+          "src2_addr": 2,
+          "write_enable": 1
+        },
+        "expected_output": {
+          "src1_data": 10,
+          "src2_data": 20
+        }
+      },
+      {
+        "input": {
+          "dest_addr": 3,
+          "dest_data": 30,
+          "src1_addr": 3,
+          "src2_addr": 2,
+          "write_enable": 1
+        },
+        "expected_output": {
+          "src1_data": 30,
+          "src2_data": 20
+        }
+      },
+      {
+        "input": {
+          "dest_addr": 0,
+          "dest_data": 40,
+          "src1_addr": 0,
+          "src2_addr": 2,
+          "write_enable": 1
+        },
+        "expected_output": {
+          "src1_data": 0,
+          "src2_data": 20
+        }
+      },
+      {
+        "input": {
+          "dest_addr": 4,
+          "dest_data": 40,
+          "src1_addr": 4,
+          "src2_addr": 2,
+          "write_enable": 0
+        },
+        "expected_output": {
+          "src1_data": 0,
+          "src2_data": 20
+        }
+      }
+    ]
+  }
+  

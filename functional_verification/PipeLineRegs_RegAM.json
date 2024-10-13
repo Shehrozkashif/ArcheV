@@ -1,0 +1,77 @@
+{
+    "test_cases": [
+      {
+        "input": {
+          "alu_result_in": 12345678,
+          "dest_addr_in": 5,
+          "src_reg2_data_in": 87654321,
+          "reg_write_en_in": 1,
+          "mem_store_en_in": 1,
+          "store_byte_en_in": 0,
+          "store_half_en_in": 1,
+          "store_word_en_in": 0,
+          "mem_load_en_in": 1,
+          "load_byte_en_in": 0,
+          "load_half_en_in": 1,
+          "load_word_en_in": 0,
+          "load_byte_unsign_en_in": 0,
+          "load_half_unsign_en_in": 1,
+          "clk": 1,
+          "reset": 0
+        },
+        "expected_output": {
+          "alu_result_out": 12345678,
+          "dest_addr_out": 5,
+          "src_reg2_data_out": 87654321,
+          "reg_write_en_out": 1,
+          "mem_store_en_out": 1,
+          "store_byte_en_out": 0,
+          "store_half_en_out": 1,
+          "store_word_en_out": 0,
+          "mem_load_en_out": 1,
+          "load_byte_en_out": 0,
+          "load_half_en_out": 1,
+          "load_word_en_out": 0,
+          "load_byte_unsign_en_out": 0,
+          "load_half_unsign_en_out": 1
+        }
+      },
+      {
+        "input": {
+          "alu_result_in": -12345678,
+          "dest_addr_in": 10,
+          "src_reg2_data_in": -87654321,
+          "reg_write_en_in": 0,
+          "mem_store_en_in": 0,
+          "store_byte_en_in": 0,
+          "store_half_en_in": 0,
+          "store_word_en_in": 0,
+          "mem_load_en_in": 0,
+          "load_byte_en_in": 0,
+          "load_half_en_in": 0,
+          "load_word_en_in": 0,
+          "load_byte_unsign_en_in": 0,
+          "load_half_unsign_en_in": 0,
+          "clk": 0,
+          "reset": 1
+        },
+        "expected_output": {
+          "alu_result_out": 0,
+          "dest_addr_out": 0,
+          "src_reg2_data_out": 0,
+          "reg_write_en_out": 0,
+          "mem_store_en_out": 0,
+          "store_byte_en_out": 0,
+          "store_half_en_out": 0,
+          "store_word_en_out": 0,
+          "mem_load_en_out": 0,
+          "load_byte_en_out": 0,
+          "load_half_en_out": 0,
+          "load_word_en_out": 0,
+          "load_byte_unsign_en_out": 0,
+          "load_half_unsign_en_out": 0
+        }
+      }
+    ]
+  }
+  
