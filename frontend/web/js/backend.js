@@ -1,63 +1,46 @@
-document.getElementById('check').addEventListener('click', function() {
-    const llmPath = document.getElementById('llm-path').value;
-    const gpuLayers = document.getElementById('gpu-layers').value;
-    const contextNumber = document.getElementById('context-number').value;
+async function analyzes() {
+    let llm_path = document.getElementById("llm-path").value;
+    let context_length = document.getElementById("context-length").value;
+    let gpu_layers = document.getElementById("gpu-layers").value;
+    const errorMessageDiv = document.getElementById('error-message');
+    if (!llm_path || !context_length || !gpu_layers) {
+      errorMessageDiv.textContent = 'Please fill in all fields.';
+      errorMessageDiv.style.display = 'block';
+      return; 
+    }
+    let result = await pywebview.api.analyze(llm_path.trim(), context_length.trim(), gpu_layers.trim())
+    // if (x== Dictionary){ ////////
+    errorMessageDiv.style.display = 'none';
+    const thirdSection = document.getElementById('third');
+    if (thirdSection) {
+      thirdSection.style.display = 'block';
+      thirdSection.scrollIntoView({ behavior: 'smooth' });
+      updateProgressBar(100); 
+    }
+    // }
+    result;
+    display_data(result)
+  };
 
-    // Send data to Python
-    window.pywebview.api.analyze({
-        llm_path: llmPath,
-        gpu_layers: gpuLayers,
-        context_number: contextNumber
-    }).then(response => {
-        console.log(response); // Check the response in the browser console
-    }).catch(error => {
-        console.error('Error:', error); // Log any errors to the console
-    });
-
-    // Fetch flow data from Python and update the table
-    window.pywebview.api.get_flow_data().then(data => {
-        updateTable(data);
-    }).catch(error => {
-        console.error('Error fetching flow data:', error);
-    });
-});
-function updateTable(data) {
-    const tableBody = document.querySelector('table tbody');
-    tableBody.innerHTML = ''; // Clear existing rows
-
-    // Loop through the data to create table rows
-    data.forEach((item, index) => {
-        const row = document.createElement('tr');
-
-        // Create and append the Id cell
-        const idCell = document.createElement('td');
-        idCell.textContent = index + 1;
-        row.appendChild(idCell);
-
-        // Create and append the Module Name cell
-        const moduleNameCell = document.createElement('td');
-        moduleNameCell.textContent = item[2]; // Assuming module name is the third element in tuple
-        row.appendChild(moduleNameCell);
-
-        // Create and append the Syntactical Verification cell
-        const syntacticalCell = document.createElement('td');
-        const syntacticalStatus = item[0]; // First column for syntactical verification
-        const syntacticalText = document.createElement('p');
-        syntacticalText.className = syntacticalStatus === 'passed' ? 'status delivered' : 'status cancelled';
-        syntacticalText.textContent = syntacticalStatus === 'passed' ? 'Passed' : 'Failed';
-        syntacticalCell.appendChild(syntacticalText);
-        row.appendChild(syntacticalCell);
-
-        // Create and append the Functional Verification cell
-        const functionalCell = document.createElement('td');
-        const functionalStatus = item[1]; // Second column for functional verification
-        const functionalText = document.createElement('p');
-        functionalText.className = functionalStatus === 'passed' ? 'status delivered' : 'status cancelled';
-        functionalText.textContent = functionalStatus === 'passed' ? 'Passed' : 'Failed';
-        functionalCell.appendChild(functionalText);
-        row.appendChild(functionalCell);
-
-        // Append the row to the table body
-        tableBody.appendChild(row);
-    });
+   
+function display_data(x) {
+    let tableBody = document.querySelector("#dictable tbody");
+    let idcounter = 1;
+    for (let key in x) {
+    let row = document.createElement("tr");      
+    let idCell = document.createElement("td");
+    idCell.textContent = idcounter; 
+    row.appendChild(idCell);      
+    let promptCell = document.createElement("td");
+    promptCell.textContent = x[key]["Prompt"];
+    row.appendChild(promptCell);
+    let syntacticalCell = document.createElement("td");
+    syntacticalCell.textContent = x[key]["syntactical_verification"];
+    row.appendChild(syntacticalCell);
+    let functionalCell = document.createElement("td");
+    functionalCell.textContent = x[key]["functional_verification"];
+    row.appendChild(functionalCell);       
+    tableBody.appendChild(row);       
+    idcounter++;
+    }
 }

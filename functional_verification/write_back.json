@@ -1,0 +1,117 @@
+{
+  "test_cases": [
+    {
+      "id":1,
+      "inputs": {
+        "alu_result": "00000005",
+        "mem_data": 0,
+        "load_data_sel": 0
+      },
+      "outputs": {
+        "wb_data": "00000005"
+      }
+    },
+    {
+      "id":2,
+      "inputs": {
+        "alu_result": "00000324",
+        "mem_data": 0,
+        "load_data_sel": 0
+      },
+      "outputs": {
+        "wb_data": "00000324"
+      }
+    },
+    {
+      "id":3,
+      "inputs": {
+        "alu_result": "00000007",
+        "mem_data": 0,
+        "load_data_sel": 0
+      },
+      "outputs": {
+        "wb_data": "00000007"
+      }
+    },
+    {
+      "id":4,
+      "inputs": {
+        "alu_result": 0,
+        "mem_data": "00000001",
+        "load_data_sel": 1
+      },
+      "outputs": {
+        "wb_data": "00000001"
+      }
+    },
+    
+
+    {
+      "id":5,
+      "inputs": {
+        "alu_result": "00000004",
+        "mem_data": 0,
+        "load_data_sel": 0
+      },
+      "outputs": {
+        "wb_data": "00000004"
+      }
+    },
+    {
+      "id":6,
+      "inputs": {
+        "alu_result": 0,
+        "mem_data": "00000009",
+        "load_data_sel": 1
+      },
+      "outputs": {
+        "wb_data": "00000009"
+      }
+    },
+    {
+      "id":7,
+      "inputs": {
+        "alu_result": "00000001",
+        "mem_data": 0,
+        "load_data_sel": 0
+      },
+      "outputs": {
+        "wb_data": "00000001"
+      }
+    },
+    {
+      "id":8,
+      "inputs": {
+        "alu_result": 0,
+        "mem_data": "00000010",
+        "load_data_sel": 1
+      },
+      "outputs": {
+        "wb_data": "00000010"
+      }
+    },
+    {
+      "id":9,
+      "inputs": {
+        "alu_result": "00000324",
+        "mem_data": "00000009",
+        "load_data_sel": 1
+      },
+      "outputs": {
+        "wb_data": "00000009"
+      }
+    },
+    {
+      "id":10,
+      "inputs": {
+        "alu_result": "00000004",
+        "mem_data": "00000005",
+        "load_data_sel": 1
+      },
+      "outputs": {
+        "wb_data": "00000005"
+      }
+    }
+
+  ]
+}

@@ -1,3 +1,5 @@
 .venv/
 .vscode/
-.metals/
+__pycache__/
+tmp/
+

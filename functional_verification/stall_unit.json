@@ -1,0 +1,206 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "inputs": {
+        "RegFD_inst": "00000293",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "00000014",
+        "stallPC_in": "00000010",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "00000293",
+        "PC_out": "00000014",
+        "stallPC_out": "00000010"
+      }
+    },
+    {
+      "id": 2,
+      "inputs": {
+        "RegFD_inst": "06524213",
+        "load_En": "0",
+        "RegDA_rd_addr": "05",
+        "pc_in": "00000018",
+        "stallPC_in": "00000014",
+        "rs1_addr": "00",
+        "rs2_addr": "05"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "06524213",
+        "PC_out": "00000018",
+        "stallPC_out": "00000014"
+      }
+    },
+    {
+      "id": 3,
+      "inputs": {
+        "RegFD_inst": "ff20a63f",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "00000020",
+        "stallPC_in": "0000001c",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "ff20a63f",
+        "PC_out": "00000020",
+        "stallPC_out": "0000001c"
+      }
+    },
+    {
+      "id": 4,
+      "inputs": {
+        "RegFD_inst": "00000000",
+        "load_En": "0",
+        "RegDA_rd_addr": "01",
+        "pc_in": "00000004",
+        "stallPC_in": "00000000",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "00000000",
+        "PC_out": "00000004",
+        "stallPC_out": "00000000"
+      }
+    },
+    {
+      "id": 5,
+      "inputs": {
+        "RegFD_inst": "00000293",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "00000014",
+        "stallPC_in": "00000010",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "00000293",
+        "PC_out": "00000014",
+        "stallPC_out": "00000010"
+      }
+    },
+    {
+      "id": 6,
+      "inputs": {
+        "RegFD_inst": "06524213",
+        "load_En": "0",
+        "RegDA_rd_addr": "05",
+        "pc_in": "00000018",
+        "stallPC_in": "00000014",
+        "rs1_addr": "00",
+        "rs2_addr": "05"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "06524213",
+        "PC_out": "00000018",
+        "stallPC_out": "00000014"
+      }
+    },
+    {
+      "id": 7,
+      "inputs": {
+        "RegFD_inst": "000628a3",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "0000001c",
+        "stallPC_in": "00000018",
+        "rs1_addr": "05",
+        "rs2_addr": "06"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "000628a3",
+        "PC_out": "0000001c",
+        "stallPC_out": "00000018"
+      }
+    },
+    {
+      "id": 8,
+      "inputs": {
+        "RegFD_inst": "ff20a63f",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "00000020",
+        "stallPC_in": "0000001c",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "ff20a63f",
+        "PC_out": "00000020",
+        "stallPC_out": "0000001c"
+      }
+    },
+    {
+      "id": 9,
+      "inputs": {
+        "RegFD_inst": "00000000",
+        "load_En": "0",
+        "RegDA_rd_addr": "01",
+        "pc_in": "00000004",
+        "stallPC_in": "00000000",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "00000000",
+        "PC_out": "00000004",
+        "stallPC_out": "00000000"
+      }
+    },
+    {
+      "id": 10,
+      "inputs": {
+        "RegFD_inst": "00000293",
+        "load_En": "0",
+        "RegDA_rd_addr": "00",
+        "pc_in": "00000014",
+        "stallPC_in": "00000010",
+        "rs1_addr": "00",
+        "rs2_addr": "00"
+      },
+      "outputs": {
+        "forward_inst": "0",
+        "forward_PC": "0",
+        "stallControl": "0",
+        "inst": "00000293",
+        "PC_out": "00000014",
+        "stallPC_out": "00000010"
+      }
+    }
+  ]
+}
+
+

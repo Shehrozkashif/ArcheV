@@ -3,62 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   
-    <script src="js/script.js" defer></script>
-    <script src="js/backend.js" defer></script>
-
     <link rel="stylesheet" href="css/styles.css">
-
     <title>ArcheV</title>
 </head>
 <body>
+    <!-- Slide 1 -->
     <div class="first"> 
         <div class="overlay">
             <nav class="navbar">
                 <ul class="menu">
                     <li><img src="images/logo.png" class="merl" alt="Merl logo"></li>
-                    <li><a href="#">Discover Merl</a></li>
-                    <li><a href="#">Research and Development</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="https://www.facebook.com/merluit/"><img class="menun_logo" src="/images/fb.png" alt="Facebook"></a></li>
-                    <li><a href="https://github.com/merledu"><img class="menun_logo" src="/images/github.jpeg" alt="GitHub"></a></li>
-                    <li><a href="https://www.instagram.com/merluit/?hl=en"><img class="menun_logo" src="/images/inst.png" alt="Instagram"></a></li>
-                </ul>
+                    </ul>
             </nav>
             <div class="text">
                 <p>ArcheV</p>
-                <h3>RISC-V RV-32i RTL Benchmark for evaluating Large Language Models developed by merledu</h3>
+                <h3>RISC-V RV32I RTL Efficiency Test</h3>
+            <span id="arrow" onclick="second()">Get Started</span>
+
             </div>
         </div>
     </div>
-
     <!-- Slide 2 -->
-    <div class="second"> 
+    <div class="second" > 
         <div class="overlay">
-          <h1>LLM Settings</h1>
-          
+          <h1>LLM Settings</h1>          
           <div id="analyze-form">
             <div class="input-container">
-                <input type="text" id="llm-path" class="input-9" placeholder="Select a folder path" required>
-                <button type="button" class="input-9 get-started-btn" id="select-folder">Select Folder</button>
+                <input type="text" id="llm-path" class="input-9" placeholder="Select a file path" required readonly>
+                <button type="button" class="input-9 get-started-btn"  onclick="openFile()" id="select-folder">Select File</button>
             </div>
-            <input type="text" id="gpu-layers" class="input-9" placeholder="GPU Layers">
-            <input type="text" id="context-number" class="input-9" placeholder="Context Number">
+            <input type="text" id="gpu-layers" class="input-9" placeholder="GPU Layers" required>
+            <input type="text" id="context-length" class="input-9" placeholder="Context Number" required>
             <div class="button-container">
-                <div id="error-message" style="color: red; display: none;"></div>
-                <button id="check" type="button" class="button blue gradient">Analyze</button>
+                <div id="error-message"></div>
+                <button id="check" type="button" class="button blue gradient" onclick="analyzes()">Analyze</button>
             </div>
             <input type="file" id="folder-selector" style="display: none;" webkitdirectory mozdirectory odirectory directory>
+          </div>            
           </div>
-            
-            <!-- Hidden file input for folder selection -->
-            <input type="file" id="folder-selector" style="display: none;" webkitdirectory mozdirectory odirectory directory>
-        </div>
     </div>
-
+    <!-- Slide 3 -->
     <div class="third" id="third"> 
         <div class="overlay">
             <h1>Analyzing.. &nbsp</h1>
@@ -67,11 +51,11 @@
             </div>
         </div>
     </div>
-    
+    <!-- Slide 4 -->
     <div class="fourth" id="fourth"> 
         <div class="overlay">
             <section class="table__body">
-                <table style="color: black;">
+                <table id="dictable" >
                   <thead>
                     <tr>
                       <th>Id </th>
@@ -81,55 +65,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Module 1</td>
-                      <td>Syntactical Verification</td>
-                      <td>
-                        <p class="status delivered">Passed</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Module 1</td>
-                      <td>Functional Verification</td>
-                      <td>
-                        <p class="status cancelled">Failed</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Module 1</td>
-                      <td>Functional Verification</td>
-                      <td>
-                        <p class="status delivered">Passed</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Module 1</td>
-                      <td>Syntactical Verification</td>
-                      <td>
-                        <p class="status cancelled">Failed</p>
-                      </td>
-                    </tr>
+                    
+                    
                   </tbody>
                 </table>
-
-              </section>
-           
-              <button id="save-json">Save as JSON</button>
-              
+              </section>                      
         </div>
-    </div>
-    
-    <div class="fifth" id="third"> 
-        <div class="overlay">
-            <p class="v">Visit Merledu</p>
-            <p class="f_line"><span class="opacity-8">Learning never exhausts the mind.</span></p>
-            <button type="submit" class="button" name="submit"> Contact us </button>
-            
-        </div>
-    </div>
+    </div>    
 </body>
+<script src="js/script.js" defer></script>
+<script src="js/backend.js" defer></script>
 </html>

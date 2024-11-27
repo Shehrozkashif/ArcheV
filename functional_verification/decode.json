@@ -1,0 +1,244 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "inputs": {
+        "instruction": 0
+      },
+      "outputs": {
+        "opcode": "00",
+        "rd_addr": "00",
+        "func3": 0,
+        "rs1_addr": "00",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "00000000",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 2,
+      "inputs": {
+        "instruction": "00000293"
+      },
+      "outputs": {
+        "opcode": "13",
+        "rd_addr": "05",
+        "func3": 0,
+        "rs1_addr": "00",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "00000000",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 3,
+      "inputs": {
+        "instruction": "00500313"
+      },
+      "outputs": {
+        "opcode": "13",
+        "rd_addr": "06",
+        "func3": 0,
+        "rs1_addr": "00",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "00000005",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 4,
+      "inputs": {
+        "instruction": "00530433"
+      },
+      "outputs": {
+        "opcode": "33",
+        "rd_addr": "08",
+        "func3": 0,
+        "rs1_addr": "06",
+        "rs2_addr": "05",
+        "func7": 0,
+        "imm": 0,
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "67",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 5,
+      "inputs": {
+        "instruction": "00128293"
+      },
+      "outputs": {
+        "opcode": "13",
+        "rd_addr": "05",
+        "func3": 0,
+        "rs1_addr": "05",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "00000001",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 6,
+      "inputs": {
+        "instruction": "06502223"
+      },
+      "outputs": {
+        "opcode": "23",
+        "rd_addr": "00",
+        "func3": "1",
+        "rs1_addr": "00",
+        "rs2_addr": "05",
+        "func7": "03",
+        "imm": "00000064",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 7,
+      "inputs": {
+        "instruction": "00628463"
+      },
+      "outputs": {
+        "opcode": "63",
+        "rd_addr": "00",
+        "func3": 0,
+        "rs1_addr": "05",
+        "rs2_addr": "06",
+        "func7": "00",
+        "imm": "000008",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 8,
+      "inputs": {
+        "instruction": "ff5ff0ef"
+      },
+      "outputs": {
+        "opcode": "6f",
+        "rd_addr": "01",
+        "func3": "0",
+        "rs1_addr": "00",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "1ffff4",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "67",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 9,
+      "inputs": {
+        "instruction": "00000293"
+      },
+      "outputs": {
+        "opcode": "13",
+        "rd_addr": "05",
+        "func3": 0,
+        "rs1_addr": "00",
+        "rs2_addr": "00",
+        "func7": "00",
+        "imm": "00000000",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    },
+    {
+      "id": 10,
+      "inputs": {
+        "instruction": "06502223"
+      },
+      "outputs": {
+        "opcode": "23",
+        "rd_addr": "00",
+        "func3": "1",
+        "rs1_addr": "00",
+        "rs2_addr": "05",
+        "func7": "00",
+        "imm": "00000064",
+        "r_id": "33",
+        "i_math_id": "13",
+        "i_load_id": "11",
+        "i_jalr_id": "067",
+        "s_id": "23",
+        "b_id": "63",
+        "u_auipc_id": "17",
+        "u_lui_id": "37",
+        "j_id": "6f"
+      }
+    }
+  ]
+}

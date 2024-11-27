@@ -1,0 +1,135 @@
+{
+    "test_cases": [
+      {
+        "id": 1,
+        "inputs": {
+          "pc_in": "00000004",
+          "instruction_in": "00000293",
+          "pc_4": "00000008"
+        },
+        "outputs": {
+          "pc_out": "00000000",
+          "instruction_out": "00000283",
+          "_pc4_out": "00000004"
+        }
+      },
+      {
+        "id": 2,
+        "inputs": {
+          "pc_in": "00000004",
+          "instruction_in": "0000293",
+          "pc_4": "0000008c"
+        },
+        "outputs": {
+          "pc_out": "00000000",
+          "instruction_out": "00000293",
+          "_pc4_out": "00000004"
+        }
+      },
+      {
+        "id": 3,
+        "inputs": {
+          "pc_in": "00000008",
+          "instruction_in": "00000293",
+          "pc_4": "0000000c"
+        },
+        "outputs": {
+          "pc_out": "00000004",
+          "instruction_out": "00000293",
+          "_pc4_out": "00000004"
+        }
+      },
+      {
+        "id": 4,
+        "inputs": {
+          "pc_in": "00000008",
+          "instruction_in": "00500313",
+          "pc_4": "0000000c"
+        },
+        "outputs": {
+          "pc_out": "00000004",
+          "instruction_out": "00000293",
+          "_pc4_out": "00000008"
+        }
+      },
+      {
+        "id": 5,
+        "inputs": {
+          "pc_in": "0000000c",
+          "instruction_in": "00500313",
+          "pc_4": "00000010"
+        },
+        "outputs": {
+          "pc_out": "00000008",
+          "instruction_out": "00500313",
+          "_pc4_out": "0000000c"
+        }
+      },
+      {
+        "id": 6,
+        "inputs": {
+          "pc_in": "00000010",
+          "instruction_in": "00530433",
+          "pc_4": "00000014"
+        },
+        "outputs": {
+          "pc_out": "0000000c",
+          "instruction_out": "00530433",
+          "_pc4_out": "00000010"
+        }
+      },
+      {
+        "id": 7,
+        "inputs": {
+          "pc_in": "00000014",
+          "instruction_in": "00128293",
+          "pc_4": "00000018"
+        },
+        "outputs": {
+          "pc_out": "00000010",
+          "instruction_out": "00128293",
+          "_pc4_out": "00000014"
+        }
+      },
+      {
+        "id": 8,
+        "inputs": {
+          "pc_in": "00000018",
+          "instruction_in": "06502223",
+          "pc_4": "0000001c"
+        },
+        "outputs": {
+          "pc_out": "00000014",
+          "instruction_out": "06502223",
+          "_pc4_out": "00000018"
+        }
+      },
+      {
+        "id": 9,
+        "inputs": {
+          "pc_in": "0000001c",
+          "instruction_in": "00628463",
+          "pc_4": "00000020"
+        },
+        "outputs": {
+          "pc_out": "00000018",
+          "instruction_out": "00628463",
+          "_pc4_out": "0000001c"
+        }
+      },
+      {
+        "id": 10,
+        "inputs": {
+          "pc_in": "00000000",
+          "instruction_in": "00000000",
+          "pc_4": "00000004"
+        },
+        "outputs": {
+          "pc_out": "0000001c",
+          "instruction_out": "ff5ff0ef",
+          "_pc4_out": "00000020"
+        }
+      }
+    ]
+  }
+  
